@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Garden - 植愈纪元</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #38a593 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .section h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Mood Garden - 植愈纪元</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section" id="home">
+            <h2>Welcome to Mood Garden</h2>
+            <p>Your mental health is important to us. Discover how plants and technology can help you manage your emotions.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="{{ url_for('static', filename='videos/intro.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <h2>About Mood Garden</h2>
+            <p>Mood Garden is a project aimed at improving mental health through plant therapy and technology. In today's fast-paced world, many people face increasing psychological pressure and emotional challenges. Mood Garden provides a unique solution by combining the natural healing power of plants with modern technology.</p>
+            <p>Our project is inspired by the growing awareness of mental health issues and the need for innovative solutions. By using plants as a medium, we aim to create a calming and therapeutic environment that helps users manage their emotions effectively.</p>
+        </section>
+   <section class="section" id="team">
+    <h2>Our Team</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="team-member">
+                <h3>杨晓婷</h3>
+                <p>Chief Executive Officer</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-member">
+                <h3>高树鹏</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="team-member">
+                <h3>胡荟灵</h3>
+                <p>Chief Operating Officer</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <p>Mood Garden offers a range of services designed to support your emotional well-being. Our services include:</p>
+            <ul>
+                <li>Emotion Tracking and Analysis</li>
+                <li>Personalized Plant Therapy</li>
+                <li>Virtual Plant Growth</li>
+                <li>Community Support and Interaction</li>
+            </ul>
+        </section>
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information or to get involved with Mood Garden, please contact us:</p>
+            <p>Email: info@moodgarden.com</p>
+            <p>Phone: +123-456-7890</p>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
